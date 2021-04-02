@@ -1,0 +1,77 @@
+/*-------------------------------------Section Contact-------------------*/
+.contact-content{
+    margin-bottom: 20px;
+}
+.contact-item{
+    width: 30%;
+    float: left;
+    text-align: center;
+    margin: 30px 0;
+}
+.contact-item.mg{
+    margin: 30px 5%;
+}
+
+.contact-list li {
+    list-style: none;
+    color: var(--maincolor);
+    margin-bottom: 20px;
+}
+
+.contact-title{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.conatct-info{
+    color: #999;
+}
+
+.contact-form{
+    text-align: center;
+}
+.contact-form{
+    width: 800px;
+    height: 400px;
+    margin:auto;
+}
+.form-name .input{
+    color: #999;
+    border: solid var(--maincolor);
+    height: 30px;
+    width: 48%;
+    float: left;
+    margin-bottom: 10px;
+}
+.form-name .inputlg{
+    color: #999;
+    border: solid var(--maincolor);
+    height: 30px;
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.form-name .inputmessage{
+    color: #999;
+    border: solid var(--maincolor);
+    height: 250px;
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.form-name .input.mg{
+    
+    margin-left: 4%;
+}
+.btn{
+    width: 150px;
+    height: 50px;
+    margin:auto;
+    background: #7ba7ff;
+    border-radius: 5%;
+    border:#7ba7ff;
+    text:bold;
+    font-size: 20px;
+}

@@ -1,0 +1,77 @@
+/* ------------------------header styles */
+.header{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.header .logo{
+    width: 40%;
+   float: left;
+}
+.header .logo img{
+    width: 20%;
+}
+.header .nav{
+    width: 60%;
+    float: left;
+    list-style: none;
+    text-align: right;
+}
+.header .nav > li{
+display: inline-block;
+
+}
+.header .nav > li > a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 30px 20px;
+    display: block;
+    
+}
+
+.header .nav > li > a:after, .header .nav > li > a.active:after{
+content: "";
+display: block;
+width: 0%;
+height: 3px;
+background-color: var(--maincolor);
+transition: width 0.5s;
+}
+
+.header .nav > li a.active:after{
+    width: 100%;
+}
+
+.header .nav > li a:hover:after{
+    width: 100%;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    background-color: var(--maincolor);
+    width: 150px;
+    text-align: center;
+    left: -50%;
+    top: 70%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ;
+}
+.dropdown:hover .dropdown-menu{
+opacity: 1;
+visibility: visible;
+}
+
+.dropdown-menu a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}

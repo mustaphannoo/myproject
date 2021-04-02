@@ -1,0 +1,45 @@
+
+/*----------------------------------Testmonia Section -----------*/
+
+.testtemonia{
+    position: relative;
+    background-image: url(../images/background/background3.webp);
+    background-attachment: fixed;
+    height: 400px;
+    background-size: cover;
+}
+
+.testmonia-content{
+width: 80%;
+margin: auto;
+}
+
+.testmonia-item{
+    width: 50%;
+    float: left;
+    color: white;
+}
+
+.testmoni-toplayer{
+    padding: 10px 10px 40px 100px;
+    position: relative;
+}
+.testmoni-toplayer img {
+position: absolute;
+left: 10px;
+top: 10px;
+border-radius: 50%;
+}
+
+.testmoni-toplayer h3{
+margin-bottom: 5px;
+}
+
+.testmoni-toplayer span{
+color: var(--maincolor);
+}
+
+.tesmonia-desc{
+    line-height: 1.7;
+    font-size: 17px;
+}

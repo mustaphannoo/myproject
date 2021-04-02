@@ -1,0 +1,106 @@
+/* -----------------supprission l'effet de float-------------------------------------------------------------------------- */
+
+.clear{
+    clear: both;
+}
+
+/* --------------------general styles--------------------------------------------------------------------------------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --maincolor: #6195ff;
+}
+h1 , h2 , h3, h4, h5, h6{
+    font-family: montserrat, sans-serif;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+
+button{
+    font-family: inherit;
+}
+
+.opacity-hover{
+    transition: opacity 0.5s;
+}
+
+.section-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-header .section-title{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.section-header .line{
+    display: block;
+    height: 5px;
+    width: 60px;
+    margin : auto;
+    background-color: var(--maincolor);
+}
+
+.pd-y{
+    padding: 120px 0;
+}
+
+
+.ltr-effect, .ttb-effect{
+    position: relative;
+}
+
+.ltr-effect:after, .ttb-effect:after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #333;
+    z-index: -1;
+    transition: width 0.5s;
+}
+
+.ltr-effect:hover:after{
+    width: 100%;
+}
+
+.ttb-effect:after{
+    
+    width: 100%;
+    height: 0;
+    transition: height 0.5s;
+}
+
+.ttb-effect:hover:after{
+    height: 100%;
+}
+
+
+/* ---------------------Body styles */
+
+body{
+    font-family: 'varela round', sans-serif;
+}
+
+/*------------------------Container */
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+

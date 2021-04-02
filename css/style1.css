@@ -1,0 +1,128 @@
+/* ------------------------------------------General Sitting---------*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: montserrat, sans-serif;
+}
+
+
+/* ------------------------------------------Headding---------*/
+.header{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+   
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.header .nav{
+    width: 60%;
+    float: right;
+    list-style: none;
+    text-align: right;
+}
+
+.header .logo{
+    width: 40%;
+    float: left;
+}
+.header .logo img {
+    width: 20%;
+}
+.header .nav li{
+    display: inline-block;
+}
+
+.header .nav li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 20px;
+    display: block;
+    font-size: 16px;
+}
+
+.header .nav li a::after, .header .nav > li > a.active:after{
+    content: "";
+    background-color: tomato;
+    display: block;
+    width: 0%;
+    height: 3px;
+    transition: width 0.5s;
+}
+
+.header .nav li a.active:after{
+    width: 100%;
+}
+
+.header .nav li a:hover::after{
+    width: 100%;
+}
+
+/*----------------------------------------Home Content -------------*/
+
+.home{
+    background-image: url(../images/background/background1.webp);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.home-content {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 65%;
+transform: translate(-50%,-50%);
+text-align: center;
+}
+
+.overlay {
+    background-color:rgba(0, 0, 0,0.6);
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+}
+
+.home .title{
+    font-size: 60px;
+    color: white;
+    text-transform: uppercase;
+}
+.home .text {
+    margin: 20px 0px;
+    word-spacing: 5px;
+    color: white;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+.home .btn {
+    min-width: 160px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 15px 0px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.home .btn-start{
+    margin-right: 30px;
+    color: white;
+    margin-right: 15px;
+    background-color:#6195ff;
+}
